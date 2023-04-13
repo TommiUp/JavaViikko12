@@ -36,26 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragmentArea"
-        android:layout_below="@+id/tabArea">
+        android:layout_below="@id/tabArea">
 
     </androidx.viewpager2.widget.ViewPager2>
-
-    <TextView
-        android:id="@+id/bottomTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="105dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Tärkeitä muistettavia asioita!"
-        android:textSize="18sp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSuperImportant"
-        android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/holo_blue_dark"
-        android:padding="8dp" />
 
 </RelativeLayout>

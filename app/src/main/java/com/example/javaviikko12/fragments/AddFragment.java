@@ -23,11 +23,9 @@ import com.example.javaviikko12.Storage;
  * create an instance of this fragment.
  */
 public class AddFragment extends Fragment {
-
     private EditText productName;
     private EditText productNotes;
     private Button addButton;
-
     private CheckBox checkImportant;
     private Context context;
 

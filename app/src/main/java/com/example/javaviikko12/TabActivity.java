@@ -62,14 +62,13 @@ public class TabActivity extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-        adapter.setProducts(storage.getImportantProducts());
-        recyclerView.setAdapter(adapter);
         recyclerView = findViewById(R.id.rvSuperImportant);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         storage = Storage.getInstance();
         storage.loadProducts(getApplicationContext());
         adapter = new InfoListAdapter(getApplicationContext(), storage.getImportantProducts());
         recyclerView.setAdapter(adapter);
+        adapter.setProducts(storage.getImportantProducts());
         adapter.notifyDataSetChanged();
     }
 }

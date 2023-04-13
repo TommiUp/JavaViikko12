@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="addOstos"
+        android:text="Lisää ostos" />
+
+    <EditText
+        android:id="@+id/productNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:hint="Ostos"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/productNotesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="Muistiinpanot"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/checkImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supertärkeä"
+        android:layout_gravity="center"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="25dp"/>
+
+</FrameLayout>
